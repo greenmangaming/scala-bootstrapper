@@ -1,15 +1,12 @@
 import com.twitter.sbt._
-import com.twitter.scalatest._
 
 seq((
   Project.defaultSettings ++
     StandardProject.newSettings ++
-    SubversionPublisher.newSettings ++
-    CompileThriftScrooge.newSettings ++
-    ScalaTestMixins.testSettings
+    CompileThriftScrooge.newSettings
 ): _*)
 
-organization := "com.twitter"
+organization := "com.gmgfarm"
 
 name := "birdname"
 
@@ -22,11 +19,12 @@ libraryDependencies ++= Seq(
   "com.twitter" %% "finagle-thrift" % "3.0.0",
   "com.twitter" %% "finagle-ostrich4" % "3.0.0",
   "org.scalatest" %% "scalatest" % "1.7.1" % "test",
-  "com.twitter" %% "scalatest-mixins" % "1.0.3" % "test"
+  "org.mockito" % "mockito-all" % "1.8.5" % "test" withSources(),
+  "org.specs2" %% "specs2" % "1.9" % "test"
 )
 
-mainClass in (Compile, run) := Some("com.twitter.birdname.Main")
+mainClass in (Compile, run) := Some("com.gmgfarm.birdname.Main")
 
-mainClass in (Compile, packageBin) := Some("com.twitter.birdname.Main")
+mainClass in (Compile, packageBin) := Some("com.gmgfarm.birdname.Main")
 
 CompileThriftScrooge.scroogeVersion := "2.5.4"

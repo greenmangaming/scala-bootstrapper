@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.version = "0.11.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Kyle Maxwell"]
-  s.date = "2011-11-18"
-  s.description = "Twitter scala project init"
+  s.authors = ["Kyle Maxwell", "Lee Packham"]
+  s.date = "2012-05-17"
+  s.description = "Green Man Gaming scala project init"
   s.email = "kmaxwell@twitter.com"
   s.default_executable = "scala-bootstrapper"
   s.executables = ["scala-bootstrapper"]
@@ -30,10 +30,10 @@ Gem::Specification.new do |s|
     "scala-bootstrapper.gemspec",
     "vendor/trollop.rb"
   ]
-  s.homepage = "http://github.com/twitter/scala-bootstrapper"
+  s.homepage = "http://github.com/greenmangaming/scala-bootstrapper"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.11"
-  s.summary = "Twitter scala project init"
+  s.summary = "Green Man Gaming scala project init"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

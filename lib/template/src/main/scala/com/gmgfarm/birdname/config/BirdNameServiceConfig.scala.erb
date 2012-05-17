@@ -1,4 +1,4 @@
-package com.twitter.birdname
+package com.gmgfarm.birdname
 package config
 
 import com.twitter.finagle.tracing.{NullTracer, Tracer}
@@ -7,6 +7,8 @@ import com.twitter.logging.config._
 import com.twitter.ostrich.admin.{RuntimeEnvironment, ServiceTracker}
 import com.twitter.ostrich.admin.config._
 import com.twitter.util.Config
+
+import com.gmgfarm.thrift.birdname._
 
 class BirdNameServiceConfig extends ServerConfig[BirdNameService.ThriftServer] {
   var thriftPort: Int = 9999

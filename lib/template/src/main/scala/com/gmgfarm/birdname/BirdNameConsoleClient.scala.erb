@@ -1,4 +1,4 @@
-package com.twitter.birdname
+package com.gmgfarm.birdname
 
 import com.twitter.conversions.time._
 import com.twitter.finagle.builder.ClientBuilder
@@ -6,6 +6,8 @@ import com.twitter.finagle.thrift.ThriftClientFramedCodec
 import java.net.InetSocketAddress
 import scala.tools.nsc.interpreter._
 import scala.tools.nsc.Settings
+
+import com.gmgfarm.thrift.birdname._
 
 object BirdNameConsoleClient extends App {
   val service = ClientBuilder()

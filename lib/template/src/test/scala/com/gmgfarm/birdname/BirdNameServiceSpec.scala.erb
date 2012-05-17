@@ -1,0 +1,22 @@
+package com.gmgfarm.birdname
+
+class BirdNameServiceSpec extends AbstractSpec {
+  "The 'Hello world' string" should {
+    "contain 11 characters" in {
+      "Hello world" must have size(11)
+    }
+    "start with 'Hello'" in {
+      "Hello world" must startWith("Hello")
+    }
+    "end with 'world'" in {
+      "Hello world" must endWith("world")
+    }
+  }
+  "BirdNameService" should {
+    "set a key, get a key" in {
+      birdName.put("name", "bluebird")()
+      birdName.get("name")().must_==("bluebird")
+      (birdName.get("what?")()) must throwA[Exception]
+    }
+  }
+}
