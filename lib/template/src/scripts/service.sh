@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ## this file is the control script for your jvm service.
 ## it is executed by monit with an argument of either start, stop or restart
 ## it is not responsible for options specific to the jvm but does background,

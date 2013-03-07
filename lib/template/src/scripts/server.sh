@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ## this file encapsulates starting the server including the JVM options
 ## and putting the pid into the pidfile. this is executed by service.sh
 ## on the start action.

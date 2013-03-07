@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 export APP_NAME="birdname"
 export APP_HOME="/usr/local/$APP_NAME/current"
