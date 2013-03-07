@@ -6,7 +6,8 @@ This creates a standard environment for your twitter-centric sbt/scala thrift se
 
 Building:
 
-    :$ rake build
+    :$ bundle install --path vendor/gems
+    :$ bundle exec rake build
     :$ gem install pkg/scala-bootstrapper-*.gem
 
 Usage:
